@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <title>project1</title>
+    <style>
+        body{
+            margin:0;
+            padding: 0;
+        }
+        header {
+            width: 1920px;
+            height: 902px;
+            background-color: beige;
+            margin:0;
+            display:inline-block;
+            margin-bottom:80px;
+
+        }
+        .main-sec1 {
+            width: 660px;
+            height: 390px;
+            border-radius: 30px;
+            margin-left: 320px;
+            margin-right: 110px;
+            margin-bottom: 120px;
+
+        }
+        .sec1-h {
+            width: 510px;
+            height: 135px;
+            margin-top: 92px;
+            margin-bottom: 30px;
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 45px;
+            display: flex;
+        }
+        .sec1-p {
+            width: 510px;
+            height: 40px;
+            font-size: 16px;
+            line-height: 20px;
+            /*font-weight: 400;*/
+            margin-top: 0;
+            margin-bottom: 30px;
+            /*font-family: "맑은 고딕";*/
+            /*overflow: hidden;*/
+            display: flex;
+        }
+        .라온이1{
+            width: 300px;
+            height: 400px;
+            margin-left:500px;
+            height:auto;
+            max-width: 100%;
+
+
+
+        }
+        .p1,.h1{
+            margin-left: 320px;
+        }
+        .h1{
+           margin-bottom: 180px;
+
+        }
+        .p1 {
+            font-size: 36px;
+        }
+        .HAS {
+            margin: 0;
+            display: flex;
+            justify-content: flex-end; /* 수평 정렬을 오른쪽으로 설정 */
+            align-items: flex-start; /* 수직 정렬을 상단으로 설정 */
+            gap:15px;
+            font-size: small;
+            margin-right: 320px;
+
+
+
+        }
+        .home,.about,.support{
+            color: cadetblue;
+            text-decoration: none;
+
+        }
+        .sec-소개문구{
+            display: flex;
+            align-items: center;
+        }
+        .소개문구{
+            margin-left:320px;;
+            line-height: 45px;
+            font-size: 20px;
+
+
+        }
+
+
+        .modalbutton,.냥스타그램 {
+            border-radius: 30px;
+            background-color: hotpink;
+            border: none;
+            outline: none;
+            color: black;
+            height: 25px;
+            cursor: pointer;
+        }
+
+        .modalbutton:hover,.냥스타그램:hover {
+            background-color: cornflowerblue;
+        }
+
+        .modalbutton{
+            margin-left: 30%;
+
+        }
+
+        .sec-1{
+            display:flex;
+        }
+        #myModal,#myModal2 {
+            display: none;
+            position: fixed;
+            top: 3%;
+            right: 11%;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+        }
+        .myModal-p,.myModal-p2{
+            font-size: 20px;
+        }
+        .insta{
+            display: flex;
+            width: 20px;
+            height: 20px;
+            border-radius: 30px;
+            margin-top: 2.5px;
+        }
+        .냥스타묶음{
+            display: flex;
+        }
+
+        .sec-2{
+            display: flex;
+        }
+
+        .sec2-h{
+            width:875px;
+            height: 60px;
+            margin-left: 523px;
+            margin-right: 522px;
+            margin-bottom: 40px;
+            margin-top: 0;
+            font-size: 48px;
+            line-height: 60px;
+            text-align: center;
+
+        }
+        .sec2-p{
+            width:710px;
+            height: 42px;
+            margin-left: 605px;
+            margin-right: 605px;
+            margin-top: 0;
+            margin-bottom: 88px;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+        }
+
+        .이미지모음1,.이미지모음2{
+            margin-left: 320px;
+            margin-right: 322px;
+            display:flex;
+            width:1278px;
+            gap:72px;
+        }
+        .이미지모음1{
+            margin-bottom: 72px;
+        }
+
+        .Raon1,.Raon2,.Raon3,.Raon4,.Raon5,.Raon6{
+            width: 378px;
+            height: 378px;
+            border-radius: 30px;
+
+        }
+        .footer-h{
+            width:263px;
+            height: 45px;
+            margin-left: 320px;
+            margin-bottom: 20px;
+        }
+        .footer-p{
+            width:395px;
+            height: 20px;
+            margin-left: 320px;
+            margin-bottom: 48px;
+
+        }
+        #map{
+            margin-left: 320px;
+                 }
+
+    </style>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let about = document.querySelector(".about");
+            let modal = document.getElementById("myModal");
+
+            about.addEventListener("click", function(event) {
+                event.preventDefault();
+                modal.style.display = "block";
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", function() {
+            let support = document.querySelector(".support");
+            let modal2 = document.getElementById("myModal2");
+
+            support.addEventListener("click", function(event) {
+                event.preventDefault();
+                modal2.style.display = "block";
+            });
+        });
+
+        function closeModal(modalId) {
+            let modal = document.getElementById(modalId);
+            modal.style.display = "none";
+        }
+
+        function refreshPage() {
+            location.reload(true); // 페이지를 새로고침합니다.
+        }
+    </script>
+
+</head>
+<body>
+
+<header>
+        <h1 class="h1">Raon
+            <div class="HAS">
+            <div><a href="#" class="home" onclick="refreshPage()">Home</a></div>
+            <div ><a href="#" class="about">About</a></div>
+                <div id="myModal">
+                    <p class="myModal-p">아직 준비중이다 냥!</p>
+                    <button class="modalbutton" onclick="closeModal('myModal')"><strong>닫아라 냥!</strong></button>
+                </div>
+
+
+
+            <div><a href="#" class="support">Support</a></div>
+
+                <div id="myModal2">
+                    <p class="myModal-p2">누르지마라 냥!!😾</p>
+                    <button class="modalbutton" onclick="closeModal('myModal2')"><strong>닫아라 냥!</strong></button>
+                </div>
+
+
+                <div class="냥스타묶음">
+                    <img src="인스타로고.png" alt="인스타로고" class="insta">
+                    <a href="https://www.instagram.com/ra.on_yaong?igsh=MXFjNnRpMDJ3anJlYw==" target="_blank" >
+                    <button class="냥스타그램"><strong>냥스타그램</strong>🐱</button></a>
+                </div>
+
+        </div></h1>
+        <article class="p1"><strong>"라온이의 페이지에 오신 것을 환영합니다!"</strong></article>
+
+    <section class="sec-소개문구">
+        <div class="소개문구">
+            우리 라온이는 아주 겁이 많은 냥이랍니다.<br>
+            하지만 매우 얌전하고 착한 개냥이에요ㅎㅎ<br>
+            라온이의 매력에 빠져보세요💖
+        </div>
+        <div><img src="라온이1.jpg" alt="header 파트 이미지" class="라온이1"></div>
+    </section>
+</header>
+<main>
+    <section class="sec-1">
+        <img src="라온이2.jpg" alt="main-sec1 파트 이미지" class="main-sec1">
+        <div><h2 class="sec1-h">"라온이를 소개합니다"</h2>
+            <p class="sec1-p">
+                <strong>
+                이름:권라온<br>
+                성별:여아<br>
+                묘종:코리안숏헤어<br>
+                나이:4살<br>
+                특징:침대바라기<br>
+                (너무 귀엽죠..!!!ㅠㅠ)
+            </strong>
+            </p>
+        </div>
+    </section>
+
+    <section class="sec-2">
+        <div>
+            <h3 class="sec2-h">라오니 구경하고 가세요~</h3>
+            <p class="sec2-p">라온이의 다양한 모습들을 소개합니다.</p>
+        </div>
+    </section>
+    <section class="이미지모음1">
+        <img src="라온이3.jpg" alt="라오니모음사진1" class="Raon1">
+        <img src="라온이4.jpg" alt="라오니모음사진2" class="Raon2">
+        <img src="라온이5.jpg" alt="라오니모음사진3" class="Raon3">
+    </section>
+    <section class="이미지모음2">
+        <img src="라온이6.png" alt="라오니모음사진4" class="Raon4">
+        <img src="라온이7.png" alt="라오니모음사진5" class="Raon5">
+        <img src="라온이8.png" alt="라오니모음사진6" class="Raon6">
+    </section>
+
+</main>
+
+<footer>
+    <h4 class="footer-h">라온이 집</h4>
+    <p class="footer-p">서울시 광진구 구의동(자세한 주소는 비밀이다 냥!)</p>
+
+    <div id="map" style="width:1278px;height:520px;"></div>
+
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=b56df8af50169a134192559b817afc77"></script>
+    <script>
+        let mapContainer = document.getElementById('map'), // 지도를 표시할 div
+            mapOption = {
+                center: new kakao.maps.LatLng(37.5444007,127.092844), // 지도의 중심좌표
+                level: 3 // 지도의 확대 레벨
+            };
+
+        // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
+        let map = new kakao.maps.Map(mapContainer, mapOption);
+    </script>
+</footer>
+</body>
+</html>
