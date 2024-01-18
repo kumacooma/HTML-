@@ -67,6 +67,8 @@
         }
         .p1 {
             font-size: 36px;
+            margin-bottom: 100px;
+
         }
         .HAS {
             margin: 0;
@@ -93,6 +95,7 @@
             margin-left:320px;;
             line-height: 45px;
             font-size: 20px;
+            margin-bottom: 100px;
 
 
         }
@@ -264,6 +267,16 @@
         {
             margin-bottom: 357px;
         }
+        .소개및추가문구{
+            flex-direction: column;
+        }
+        .추가문구 {
+
+            flex-direction: column;
+            font-size: 25px;
+            color: navy;
+            margin-left: 320px;
+        }
 
     </style>
 
@@ -355,11 +368,16 @@
         <article class="p1"><strong>"라온이의 페이지에 오신 것을 환영합니다!"</strong></article>
 
     <section class="sec-소개문구">
-        <div class="소개문구">
-            우리 라온이는 아주 겁이 많은 냥이랍니다.<br>
-            하지만 매우 얌전하고 착한 개냥이에요ㅎㅎ<br>
-            라온이의 매력에 빠져보세요💖
+
+        <div class="소개및추가문구">
+            <div class="소개문구">
+                우리 라온이는 아주 겁이 많은 냥이랍니다.<br>
+                하지만 매우 얌전하고 착한 개냥이에요ㅎㅎ<br>
+                라온이의 매력에 빠져보세요💖
+            </div>
+            <p class="추가문구"><strong>고양이 사진들을 클릭하시면<br>다운로드 받으실 수 있습니다!</strong></p>
         </div>
+
 
         <img class="라온이1" src="라온이1.jpg" alt="Thumbnail Image" onclick="openLightbox('라온이1.jpg', '라온이1.jpg')">
         <div class="lightbox" id="lightbox" onclick="closeLightbox()">
