@@ -33,8 +33,8 @@ header,main,footer{
 }
 .sec1-h {
     width: 510px;
-    height: 135px;
-    margin-top: 92px;
+    height: 92px;
+    margin-top: 40px; /*배치가 너무 안이뻐서 살짝만 수정했어요ㅠ*/
     margin-bottom: 30px;
     font-size: 36px;
     font-weight: 700;
@@ -44,8 +44,8 @@ header,main,footer{
 .sec1-p {
     width: 510px;
     height: 40px;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 20px; /*배치가 너무 안이뻐서 살짝만 수정했어요ㅠ*/
+    line-height: 32px; /*배치가 너무 안이뻐서 살짝만 수정했어요ㅠ*/
     /*font-weight: 400;*/
     margin-top: 0;
     margin-bottom: 30px;
@@ -106,8 +106,21 @@ header,main,footer{
 
 }
 
+.사진다운버튼{
+    border-radius: 30px;
+    background-color: hotpink;
+    border: none;
+    outline: none;
+    color: black;
+    height: 40px;
+    font-size: 25px;
+    text-align: center;
+    width: 40px;
+    cursor: pointer;
 
-.사진다운버튼,.modalbutton,.냥스타그램 {
+}
+
+.modalbutton,.냥스타그램 {
     border-radius: 30px;
     background-color: hotpink;
     border: none;
@@ -158,6 +171,8 @@ header,main,footer{
 
 .sec-2{
     display: flex;
+    background-color: lightcyan;
+    width:1920px;
 }
 
 .sec2-h{
@@ -178,7 +193,8 @@ header,main,footer{
     margin-left: 605px;
     margin-right: 605px;
     margin-top: 0;
-    margin-bottom: 88px;
+    margin-bottom: 0;
+    /*margin-bottom: 88px;*/
     font-size: 16px;
     line-height: 20px;
     text-align: center;
@@ -282,6 +298,7 @@ header,main,footer{
 }
 
 .image-gallery {
+    background-color: lightpink;
     display: flex;
     flex-wrap: wrap;
     gap: 72px;
@@ -291,6 +308,7 @@ header,main,footer{
     margin-bottom: 288px;
     max-height: 828px;
     overflow-y: auto;
+    margin-top: 88px;
 }
 
 .image-gallery img {
@@ -303,8 +321,8 @@ header,main,footer{
 .line{
     display: flex;
     width:1278px;
-    height:1px;
     margin-left:320px;
     margin-bottom: 68px;
-    color:hotpink;
+    border:1px solid hotpink;
 }
+
