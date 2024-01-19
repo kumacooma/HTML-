@@ -1,39 +1,41 @@
 body{
     margin:0;
     padding: 0;
-    /*overflow-x: hidden;*/
+
 }
 header {
-    width: 1920px;
-    height: 902px;
+
     background-color: beige;
-    margin:0;
-    display:inline-block;
     margin-bottom:80px;
+}
+.background-div{
+    width: 1278px;
+    margin:0 auto;
 
+}
 
-
+.navi{
+    display: flex;
+    justify-content: space-between;
 }
 
 header,main,footer{
-    max-width: 1920px;
+
 
 }
 
 .main-sec1 {
-    width: 660px;
+    display: flex;
+    width: 500px;
     height: 390px;
     border-radius: 30px;
-    margin-left: 320px;
-    margin-right: 110px;
     margin-bottom: 120px;
     cursor: pointer;
 
 
 }
 .sec1-h {
-    width: 510px;
-    height: 92px;
+
     margin-top: 40px; /*배치가 너무 안이뻐서 살짝만 수정했어요ㅠ*/
     margin-bottom: 30px;
     font-size: 36px;
@@ -42,30 +44,20 @@ header,main,footer{
     display: flex;
 }
 .sec1-p {
-    width: 510px;
-    height: 40px;
-    font-size: 20px; /*배치가 너무 안이뻐서 살짝만 수정했어요ㅠ*/
-    line-height: 32px; /*배치가 너무 안이뻐서 살짝만 수정했어요ㅠ*/
-    /*font-weight: 400;*/
-    margin-top: 0;
-    margin-bottom: 30px;
-    /*font-family: "맑은 고딕";*/
-    /*overflow: hidden;*/
+
     display: flex;
 }
 .라온이1{
     width: 300px;
-    height: 400px;
-    margin-left:500px;
-    height:auto;
-    max-width: 100%;
+
+    height:400px;
     cursor: pointer;
 
 
 
 }
 .p1,.h1{
-    margin-left: 320px;
+
 }
 .h1{
     margin-bottom: 180px;
@@ -77,13 +69,11 @@ header,main,footer{
 
 }
 .HAS {
-    margin: 0;
+    margin-top:21.44px;
     display: flex;
-    justify-content: flex-end; /* 수평 정렬을 오른쪽으로 설정 */
-    align-items: flex-start; /* 수직 정렬을 상단으로 설정 */
     gap:15px;
     font-size: small;
-    margin-right: 320px;
+
 
 
 
@@ -96,9 +86,11 @@ header,main,footer{
 .sec-소개문구{
     display: flex;
     align-items: center;
+    width: 1278px;
+    justify-content: space-between;
 }
 .소개문구{
-    margin-left:320px;;
+
     line-height: 45px;
     font-size: 20px;
     margin-bottom: 100px;
@@ -142,7 +134,19 @@ header,main,footer{
 
 .sec-1{
     display:flex;
+    justify-content: space-between;
+    margin:0 auto;
+    width: 1280px;
 }
+.소개박스{
+    display: flex;
+    flex-direction: column;
+    height: 390px;
+    justify-content: space-around;
+}
+
+
+
 #myModal,#myModal2 {
     display: none;
     position: fixed;
@@ -172,39 +176,36 @@ header,main,footer{
 .sec-2{
     display: flex;
     background-color: lightcyan;
-    width:1920px;
+    justify-content: center;
+
 }
 
 .sec2-h{
-    width:875px;
-    height: 60px;
-    margin-left: 523px;
-    margin-right: 522px;
-    margin-bottom: 40px;
-    margin-top: 0;
+
     font-size: 48px;
     line-height: 60px;
     text-align: center;
 
 }
 .sec2-p{
-    width:710px;
-    height: 42px;
-    margin-left: 605px;
-    margin-right: 605px;
-    margin-top: 0;
-    margin-bottom: 0;
-    /*margin-bottom: 88px;*/
+
     font-size: 16px;
     line-height: 20px;
     text-align: center;
 }
 
+.h3-p{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
 .이미지모음{
 
     display:flex;
-    width:1278px;
-    gap:72px;
+    width: 1519.2px;
+    justify-content: space-evenly;
+
 }
 
 .Raon{
@@ -215,23 +216,30 @@ header,main,footer{
 
 }
 .footer-h{
-    width:263px;
-    height: 45px;
-    margin-left: 320px;
+    display: flex;
     margin-bottom: 20px;
+    margin-top: 0;
     font-size: 36px;
+    width: 1278px;
+    margin-left: auto;
+    margin-right: auto;
 }
-.footer-p{
-    width:395px;
-    height: 20px;
-    margin-left: 320px;
-    margin-bottom: 48px;
-    font-size: 16px;
 
+.footer-p{
+    display: flex;
+    font-size: 16px;
+    width: 1278px;
+    margin: 0 auto;
 }
+
 #map{
-    margin-left: 320px;
-    margin-bottom: 600px;
+    display: flex;
+    width: 1278px;
+    height: 520px;
+    margin-bottom: 80px;
+    margin-top: 48px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .문구와버튼
@@ -294,21 +302,24 @@ header,main,footer{
     flex-direction: column;
     font-size: 25px;
     color: navy;
-    margin-left: 320px;
+    /*margin-left: 320px;*/
 }
 
 .image-gallery {
     background-color: lightpink;
     display: flex;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    gap: 72px;
-    margin-left: 320px;
-    margin-right: 322px;
-    width: 1295px; /*사진이 약간 잘리는 관계로 스크롤 폭은 상향조정*/
+    /*gap: 72px;*/
+    /*margin-left: 320px;*/
+    /*margin-right: 322px;*/
+    /*width: 1295px; !*사진이 약간 잘리는 관계로 스크롤 폭은 상향조정*!*/
     margin-bottom: 288px;
     max-height: 828px;
     overflow-y: auto;
     margin-top: 88px;
+    gap:92.1px;
+
 }
 
 .image-gallery img {
@@ -320,8 +331,8 @@ header,main,footer{
 
 .line{
     display: flex;
-    width:1278px;
-    margin-left:320px;
+    /*width:1278px;*/
+    /*margin-left:320px;*/
     margin-bottom: 68px;
     border:1px solid hotpink;
 }

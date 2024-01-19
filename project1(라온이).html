@@ -14,59 +14,64 @@
 <body>
 
 <header>
-    <h1 class="h1">Raon
-        <div class="HAS">
-            <div><a href="#" class="home" onclick="refreshPage()">Home</a></div>
-            <div ><a href="#" class="about">About</a></div>
-            <div id="myModal">
-                <p class="myModal-p">아직 준비중이다 냥!</p>
-                <button class="modalbutton" onclick="closeModal('myModal')"><strong>닫아라 냥!</strong></button>
-            </div>
+    <div class="background-div">
+
+        <div class="navi">
+            <h1 class="h1">Raon</h1>
+            <div class="HAS">
+                <div><a href="#" class="home" onclick="refreshPage()">Home</a></div>
+                <div><a href="#" class="about">About</a></div>
+                <div id="myModal">
+                    <p class="myModal-p">아직 준비중이다 냥!</p>
+                    <button class="modalbutton" onclick="closeModal('myModal')"><strong>닫아라 냥!</strong></button>
+                </div>
 
 
+                <div><a href="#" class="support">Support</a></div>
 
-            <div><a href="#" class="support">Support</a></div>
-
-            <div id="myModal2">
-                <p class="myModal-p2">누르지마라 냥!!😾</p>
-                <button class="modalbutton" onclick="closeModal('myModal2')"><strong>닫아라 냥!</strong></button>
-            </div>
-
-
-            <div class="냥스타묶음">
-                <img src="인스타로고.png" alt="인스타로고" class="insta">
-                <a href="https://www.instagram.com/ra.on_yaong?igsh=MXFjNnRpMDJ3anJlYw==" target="_blank" >
-                    <button class="냥스타그램"><strong>냥스타그램</strong>🐱</button></a>
-            </div>
-
-        </div></h1>
-    <article class="p1"><strong>"라온이의 페이지에 오신 것을 환영합니다!"</strong></article>
-
-    <section class="sec-소개문구">
-
-        <div class="소개및추가문구">
-            <div class="소개문구">
-                우리 라온이는 아주 겁이 많은 냥이랍니다.<br>
-                하지만 매우 얌전하고 착한 개냥이에요ㅎㅎ<br>
-                라온이의 매력에 빠져보세요💖
-            </div>
-            <p class="추가문구"><strong>고양이 사진들을 클릭하시면<br>다운로드 받으실 수 있습니다!</strong></p>
-        </div>
+                <div id="myModal2">
+                    <p class="myModal-p2">누르지마라 냥!!😾</p>
+                    <button class="modalbutton" onclick="closeModal('myModal2')"><strong>닫아라 냥!</strong></button>
+                </div>
 
 
-        <img class="라온이1" src="라온이1.jpg" alt="Thumbnail Image" onclick="openLightbox('라온이1.jpg', '라온이1.jpg')">
-        <div class="lightbox" id="lightbox" onclick="closeLightbox()">
-            <div class="다운로드구조">
-                <img src="" alt="Lightbox Image" id="lightboxImage">
-                <div class="문구와버튼">
-                    <p class="다운로드문구">나를 데려가겠느냥?</p>
-                    <a id="downloadLink" download="" class="사진다운버튼링크">
-                        <button class="사진다운버튼"><strong>냥!</strong></button>
+                <div class="냥스타묶음">
+                    <img src="인스타로고.png" alt="인스타로고" class="insta">
+                    <a href="https://www.instagram.com/ra.on_yaong?igsh=MXFjNnRpMDJ3anJlYw==" target="_blank">
+                        <button class="냥스타그램"><strong>냥스타그램</strong>🐱</button>
                     </a>
                 </div>
-            </div>
         </div>
-    </section>
+
+        </div>
+        <article class="p1"><strong>"라온이의 페이지에 오신 것을 환영합니다!"</strong></article>
+
+        <section class="sec-소개문구">
+
+            <div class="소개및추가문구">
+                <div class="소개문구">
+                    우리 라온이는 아주 겁이 많은 냥이랍니다.<br>
+                    하지만 매우 얌전하고 착한 개냥이에요ㅎㅎ<br>
+                    라온이의 매력에 빠져보세요💖
+                </div>
+                <p class="추가문구"><strong>고양이 사진들을 클릭하시면<br>다운로드 받으실 수 있습니다!</strong></p>
+            </div>
+
+
+            <img class="라온이1" src="라온이1.jpg" alt="Thumbnail Image" onclick="openLightbox('라온이1.jpg', '라온이1.jpg')">
+            <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+                <div class="다운로드구조">
+                    <img src="" alt="Lightbox Image" id="lightboxImage">
+                    <div class="문구와버튼">
+                        <p class="다운로드문구">나를 데려가겠느냥?</p>
+                        <a id="downloadLink" download="" class="사진다운버튼링크">
+                            <button class="사진다운버튼"><strong>냥!</strong></button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 </header>
 <main>
     <section class="sec-1">
@@ -83,7 +88,8 @@
                 </div>
             </div>
         </div>
-        <div class="소개박스"><h2 class="sec1-h">"라온이를 소개합니다"</h2>
+        <div class="소개박스">
+            <h2 class="sec1-h">"라온이를 소개합니다"</h2>
             <p class="sec1-p">
 <!--                <strong>-->
                     이름 : 권라온<br>
@@ -98,7 +104,7 @@
     </section>
 
     <section class="sec-2">
-        <div>
+        <div class="h3-p">
             <h3 class="sec2-h">라오니 구경하고 가세요~</h3>
             <p class="sec2-p">라온이의 다양한 모습들을 소개합니다.</p>
         </div>
