@@ -1,0 +1,52 @@
+document.addEventListener("DOMContentLoaded", function() {
+    let about = document.querySelector(".about");
+    let modal = document.getElementById("myModal");
+
+    about.addEventListener("click", function(event) {
+        event.preventDefault();
+        modal.style.display = "block";
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    let support = document.querySelector(".support");
+    let modal2 = document.getElementById("myModal2");
+
+    support.addEventListener("click", function(event) {
+        event.preventDefault();
+        modal2.style.display = "block";
+    });
+});
+
+function closeModal(modalId) {
+    let modal = document.getElementById(modalId);
+    modal.style.display = "none";
+}
+
+function refreshPage() {
+    location.reload(true); // 페이지를 새로고침합니다.
+}
+
+
+
+function openLightbox(imageSrc, downloadLink) {
+    // Lightbox 표시
+    let lightbox = document.getElementById('lightbox');
+    lightbox.style.display = 'flex';
+
+    // Lightbox 이미지 업데이트
+    let lightboxImage = document.getElementById('lightboxImage');
+    lightboxImage.src = imageSrc;
+
+    // Lightbox 다운로드 링크 업데이트
+    let downloadButton = document.getElementById('downloadLink');
+    downloadButton.href = downloadLink;
+}
+
+
+function closeLightbox() {
+    // Lightbox 닫기
+    let lightbox = document.getElementById('lightbox');
+    lightbox.style.display = 'none';
+}
+

@@ -1,376 +1,46 @@
+
 <!DOCTYPE html>
 <html lang="kr">
 <head>
     <meta charset="UTF-8">
     <title>project1</title>
-    <style>
-        body{
-            margin:0;
-            padding: 0;
-        }
-        header {
-            width: 1920px;
-            height: 902px;
-            background-color: beige;
-            margin:0;
-            display:inline-block;
-            margin-bottom:80px;
-
-        }
-        .main-sec1 {
-            width: 660px;
-            height: 390px;
-            border-radius: 30px;
-            margin-left: 320px;
-            margin-right: 110px;
-            margin-bottom: 120px;
-            cursor: pointer;
 
 
-        }
-        .sec1-h {
-            width: 510px;
-            height: 135px;
-            margin-top: 92px;
-            margin-bottom: 30px;
-            font-size: 36px;
-            font-weight: 700;
-            line-height: 45px;
-            display: flex;
-        }
-        .sec1-p {
-            width: 510px;
-            height: 40px;
-            font-size: 16px;
-            line-height: 20px;
-            /*font-weight: 400;*/
-            margin-top: 0;
-            margin-bottom: 30px;
-            /*font-family: "맑은 고딕";*/
-            /*overflow: hidden;*/
-            display: flex;
-        }
-        .라온이1{
-            width: 300px;
-            height: 400px;
-            margin-left:500px;
-            height:auto;
-            max-width: 100%;
-            cursor: pointer;
+    <link rel="stylesheet" type="text/css" href="라온이.css">
 
-
-
-        }
-        .p1,.h1{
-            margin-left: 320px;
-        }
-        .h1{
-           margin-bottom: 180px;
-
-        }
-        .p1 {
-            font-size: 36px;
-            margin-bottom: 100px;
-
-        }
-        .HAS {
-            margin: 0;
-            display: flex;
-            justify-content: flex-end; /* 수평 정렬을 오른쪽으로 설정 */
-            align-items: flex-start; /* 수직 정렬을 상단으로 설정 */
-            gap:15px;
-            font-size: small;
-            margin-right: 320px;
-
-
-
-        }
-        .home,.about,.support{
-            color: cadetblue;
-            text-decoration: none;
-
-        }
-        .sec-소개문구{
-            display: flex;
-            align-items: center;
-        }
-        .소개문구{
-            margin-left:320px;;
-            line-height: 45px;
-            font-size: 20px;
-            margin-bottom: 100px;
-
-
-        }
-
-
-        .사진다운버튼,.modalbutton,.냥스타그램 {
-            border-radius: 30px;
-            background-color: hotpink;
-            border: none;
-            outline: none;
-            color: black;
-            height: 25px;
-            cursor: pointer;
-        }
-
-        .사진다운버튼:hover,.modalbutton:hover,.냥스타그램:hover {
-            background-color: cornflowerblue;
-        }
-
-       .modalbutton{
-            margin-left: 30%;
-
-
-        }
-
-        .sec-1{
-            display:flex;
-        }
-       #myModal,#myModal2 {
-            display: none;
-            position: fixed;
-            top: 3%;
-            right: 11%;
-            padding: 20px;
-            background-color: white;
-            border: 1px solid #ccc;
-            border-radius: 30px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            z-index: 1;
-        }
-        .myModal-p,.myModal-p2{
-            font-size: 20px;
-        }
-        .insta{
-            display: flex;
-            width: 20px;
-            height: 20px;
-            border-radius: 30px;
-            margin-top: 2.5px;
-        }
-        .냥스타묶음{
-            display: flex;
-        }
-
-        .sec-2{
-            display: flex;
-        }
-
-        .sec2-h{
-            width:875px;
-            height: 60px;
-            margin-left: 523px;
-            margin-right: 522px;
-            margin-bottom: 40px;
-            margin-top: 0;
-            font-size: 48px;
-            line-height: 60px;
-            text-align: center;
-
-        }
-        .sec2-p{
-            width:710px;
-            height: 42px;
-            margin-left: 605px;
-            margin-right: 605px;
-            margin-top: 0;
-            margin-bottom: 88px;
-            font-size: 16px;
-            line-height: 20px;
-            text-align: center;
-        }
-
-        .이미지모음1,.이미지모음2{
-            margin-left: 320px;
-            margin-right: 322px;
-            display:flex;
-            width:1278px;
-            gap:72px;
-        }
-        .이미지모음1{
-            margin-bottom: 72px;
-        }
-
-        .Raon1,.Raon2,.Raon3,.Raon4,.Raon5,.Raon6{
-            width: 378px;
-            height: 378px;
-            border-radius: 30px;
-            cursor: pointer;
-
-        }
-        .footer-h{
-            width:263px;
-            height: 45px;
-            margin-left: 320px;
-            margin-bottom: 20px;
-        }
-        .footer-p{
-            width:395px;
-            height: 20px;
-            margin-left: 320px;
-            margin-bottom: 48px;
-
-        }
-        #map{
-            margin-left: 320px;
-            margin-bottom: 600px;
-                 }
-
-        .문구와버튼
-        {
-            width: 190px;
-            padding: 10px;
-            margin : auto;
-            background-color: white;
-            border: 1px solid #ccc;
-            border-radius: 30px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .다운로드구조{
-            display: flex;
-            flex-direction: column;
-        }
-
-        .사진다운버튼 {
-            display: flex;
-            margin:auto;
-
-        }
-        .사진다운버튼링크{
-            text-decoration-line:none ;}
-
-        .다운로드문구 {
-
-            text-align: center;
-            font-size: 20px;
-
-
-        }
-
-        .lightbox {
-            position: fixed;
-            display: none;
-            top: 10%;
-            left: 37%;
-            width: 90%;
-            height: 90%;
-
-
-        }
-
-        .lightbox img {
-            max-width: 90%;
-            max-height: 90%;
-            border: 2px solid white;
-            border-radius: 30px;
-            margin: auto;
-
-        }
-
-        .이미지모음2
-        {
-            margin-bottom: 357px;
-        }
-        .소개및추가문구{
-            flex-direction: column;
-        }
-        .추가문구 {
-
-            flex-direction: column;
-            font-size: 25px;
-            color: navy;
-            margin-left: 320px;
-        }
-
-    </style>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            let about = document.querySelector(".about");
-            let modal = document.getElementById("myModal");
-
-            about.addEventListener("click", function(event) {
-                event.preventDefault();
-                modal.style.display = "block";
-            });
-        });
-
-        document.addEventListener("DOMContentLoaded", function() {
-            let support = document.querySelector(".support");
-            let modal2 = document.getElementById("myModal2");
-
-            support.addEventListener("click", function(event) {
-                event.preventDefault();
-                modal2.style.display = "block";
-            });
-        });
-
-        function closeModal(modalId) {
-            let modal = document.getElementById(modalId);
-            modal.style.display = "none";
-        }
-
-        function refreshPage() {
-            location.reload(true); // 페이지를 새로고침합니다.
-        }
-
-
-
-        function openLightbox(imageSrc, downloadLink) {
-            // Lightbox 표시
-            let lightbox = document.getElementById('lightbox');
-            lightbox.style.display = 'flex';
-
-            // Lightbox 이미지 업데이트
-            let lightboxImage = document.getElementById('lightboxImage');
-            lightboxImage.src = imageSrc;
-
-            // Lightbox 다운로드 링크 업데이트
-            let downloadButton = document.getElementById('downloadLink');
-            downloadButton.href = downloadLink;
-        }
-
-        function closeLightbox() {
-            // Lightbox 닫기
-            let lightbox = document.getElementById('lightbox');
-            lightbox.style.display = 'none';
-        }
-
-
-    </script>
+    <script src="라온이.js"></script>
 
 </head>
 <body>
 
 <header>
-        <h1 class="h1">Raon
-            <div class="HAS">
+    <h1 class="h1">Raon
+        <div class="HAS">
             <div><a href="#" class="home" onclick="refreshPage()">Home</a></div>
             <div ><a href="#" class="about">About</a></div>
-                <div id="myModal">
-                    <p class="myModal-p">아직 준비중이다 냥!</p>
-                    <button class="modalbutton" onclick="closeModal('myModal')"><strong>닫아라 냥!</strong></button>
-                </div>
+            <div id="myModal">
+                <p class="myModal-p">아직 준비중이다 냥!</p>
+                <button class="modalbutton" onclick="closeModal('myModal')"><strong>닫아라 냥!</strong></button>
+            </div>
 
 
 
             <div><a href="#" class="support">Support</a></div>
 
-                <div id="myModal2">
-                    <p class="myModal-p2">누르지마라 냥!!😾</p>
-                    <button class="modalbutton" onclick="closeModal('myModal2')"><strong>닫아라 냥!</strong></button>
-                </div>
+            <div id="myModal2">
+                <p class="myModal-p2">누르지마라 냥!!😾</p>
+                <button class="modalbutton" onclick="closeModal('myModal2')"><strong>닫아라 냥!</strong></button>
+            </div>
 
 
-                <div class="냥스타묶음">
-                    <img src="인스타로고.png" alt="인스타로고" class="insta">
-                    <a href="https://www.instagram.com/ra.on_yaong?igsh=MXFjNnRpMDJ3anJlYw==" target="_blank" >
+            <div class="냥스타묶음">
+                <img src="인스타로고.png" alt="인스타로고" class="insta">
+                <a href="https://www.instagram.com/ra.on_yaong?igsh=MXFjNnRpMDJ3anJlYw==" target="_blank" >
                     <button class="냥스타그램"><strong>냥스타그램</strong>🐱</button></a>
-                </div>
+            </div>
 
         </div></h1>
-        <article class="p1"><strong>"라온이의 페이지에 오신 것을 환영합니다!"</strong></article>
+    <article class="p1"><strong>"라온이의 페이지에 오신 것을 환영합니다!"</strong></article>
 
     <section class="sec-소개문구">
 
@@ -416,13 +86,13 @@
         <div><h2 class="sec1-h">"라온이를 소개합니다"</h2>
             <p class="sec1-p">
                 <strong>
-                이름:권라온<br>
-                성별:여아<br>
-                묘종:코리안숏헤어<br>
-                나이:4살<br>
-                특징:침대바라기<br>
-                (너무 귀엽죠..!!!ㅠㅠ)
-            </strong>
+                    이름:권라온<br>
+                    성별:여아<br>
+                    묘종:코리안숏헤어<br>
+                    나이:4살<br>
+                    특징:침대바라기<br>
+                    (너무 귀엽죠..!!!ㅠㅠ)
+                </strong>
             </p>
         </div>
     </section>
@@ -433,44 +103,343 @@
             <p class="sec2-p">라온이의 다양한 모습들을 소개합니다.</p>
         </div>
     </section>
-    <section class="이미지모음1">
-        <img class="Raon1" src="라온이3.jpg" alt="Thumbnail Image" onclick="openLightbox('라온이3.jpg', '라온이3.jpg')">
-        <img class="Raon2" src="라온이4.jpg" alt="Thumbnail Image" onclick="openLightbox('라온이4.jpg', '라온이4.jpg')">
-        <img class="Raon3" src="라온이5.jpg" alt="Thumbnail Image" onclick="openLightbox('라온이5.jpg', '라온이5.jpg')">
 
-        <div class="lightbox" id="lightbox" onclick="closeLightbox()">
-            <div class="다운로드구조">
-                <img src="" alt="Lightbox Image" id="lightboxImage">
-                <div class="문구와버튼">
-                    <p class="다운로드문구">나를 데려가겠느냥?</p>
-                    <a id="downloadLink" download="" class="사진다운버튼링크">
-                        <button class="사진다운버튼"><strong>냥!</strong></button>
-                    </a>
+    <section class="image-gallery">
+        <section class="이미지모음">
+            <img class="Raon" src="라온이3.jpg" alt="Thumbnail Image" onclick="openLightbox('라온이3.jpg', '라온이3.jpg')">
+            <img class="Raon" src="라온이4.jpg" alt="Thumbnail Image" onclick="openLightbox('라온이4.jpg', '라온이4.jpg')">
+            <img class="Raon" src="라온이5.jpg" alt="Thumbnail Image" onclick="openLightbox('라온이5.jpg', '라온이5.jpg')">
+
+            <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+                <div class="다운로드구조">
+                    <img src="" alt="Lightbox Image" id="lightboxImage">
+                    <div class="문구와버튼">
+                        <p class="다운로드문구">나를 데려가겠느냥?</p>
+                        <a id="downloadLink" download="" class="사진다운버튼링크">
+                            <button class="사진다운버튼"><strong>냥!</strong></button>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
 
 
-    </section>
-    <section class="이미지모음2">
+        </section>
+        <section class="이미지모음">
 
-        <img class="Raon4" src="라온이6.png" alt="Thumbnail Image" onclick="openLightbox('라온이6.png', '라온이6.png')">
-        <img class="Raon5" src="라온이7.png" alt="Thumbnail Image" onclick="openLightbox('라온이7.png', '라온이7.png')">
-        <img class="Raon6" src="라온이8.png" alt="Thumbnail Image" onclick="openLightbox('라온이8.png', '라온이8.png')">
+            <img class="Raon" src="라온이6.png" alt="Thumbnail Image" onclick="openLightbox('라온이6.png', '라온이6.png')">
+            <img class="Raon" src="라온이7.png" alt="Thumbnail Image" onclick="openLightbox('라온이7.png', '라온이7.png')">
+            <img class="Raon" src="라온이8.png" alt="Thumbnail Image" onclick="openLightbox('라온이8.png', '라온이8.png')">
 
-        <div class="lightbox" id="lightbox" onclick="closeLightbox()">
-            <div class="다운로드구조">
-                <img src="" alt="Lightbox Image" id="lightboxImage">
-                <div class="문구와버튼">
-                    <p class="다운로드문구">나를 데려가겠느냥?</p>
-                    <a id="downloadLink" download="" class="사진다운버튼링크">
-                        <button class="사진다운버튼"><strong>냥!</strong></button>
-                    </a>
+            <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+                <div class="다운로드구조">
+                    <img src="" alt="Lightbox Image" id="lightboxImage">
+                    <div class="문구와버튼">
+                        <p class="다운로드문구">나를 데려가겠느냥?</p>
+                        <a id="downloadLink" download="" class="사진다운버튼링크">
+                            <button class="사진다운버튼"><strong>냥!</strong></button>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <section class="이미지모음">
+
+
+            <img class="Raon" src="라온이9.jpg" alt="Thumbnail Image" onclick="openLightbox('라온이9.jpg', '라온이9.jpg')">
+            <img class="Raon" src="라온이10.jpg" alt="Thumbnail Image" onclick="openLightbox('라온이10.jpg', '라온이10.jpg')">
+            <img class="Raon" src="라온이11.jpg" alt="Thumbnail Image" onclick="openLightbox('라온이11.jpg', '라온이11.jpg')">
+
+            <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+                <div class="다운로드구조">
+                    <img src="" alt="Lightbox Image" id="lightboxImage">
+                    <div class="문구와버튼">
+                        <p class="다운로드문구">나를 데려가겠느냥?</p>
+                        <a id="downloadLink" download="" class="사진다운버튼링크">
+                            <button class="사진다운버튼"><strong>냥!</strong></button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="이미지모음">
+
+
+            <img class="Raon" src="라온이12.jpg" alt="Thumbnail Image" onclick="openLightbox('라온이12.jpg', '라온이12.jpg')">
+            <img class="Raon" src="라온이13.jpg" alt="Thumbnail Image" onclick="openLightbox('라온이13.jpg', '라온이13.jpg')">
+            <img class="Raon" src="라온이14.jpg" alt="Thumbnail Image" onclick="openLightbox('라온이14.jpg', '라온이14.jpg')">
+
+            <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+                <div class="다운로드구조">
+                    <img src="" alt="Lightbox Image" id="lightboxImage">
+                    <div class="문구와버튼">
+                        <p class="다운로드문구">나를 데려가겠느냥?</p>
+                        <a id="downloadLink" download="" class="사진다운버튼링크">
+                            <button class="사진다운버튼"><strong>냥!</strong></button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="이미지모음">
+
+
+            <img class="Raon" src="라온이15.jpg" alt="Thumbnail Image" onclick="openLightbox('라온이15.jpg', '라온이15.jpg')">
+            <img class="Raon" src="라온이16.jpg" alt="Thumbnail Image" onclick="openLightbox('라온이16.jpg', '라온이16.jpg')">
+            <img class="Raon" src="라온이17.jpg" alt="Thumbnail Image" onclick="openLightbox('라온이17.jpg', '라온이17.jpg')">
+
+            <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+                <div class="다운로드구조">
+                    <img src="" alt="Lightbox Image" id="lightboxImage">
+                    <div class="문구와버튼">
+                        <p class="다운로드문구">나를 데려가겠느냥?</p>
+                        <a id="downloadLink" download="" class="사진다운버튼링크">
+                            <button class="사진다운버튼"><strong>냥!</strong></button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="이미지모음">
+
+
+            <img class="Raon" src="라온이18.jpg" alt="Thumbnail Image" onclick="openLightbox('라온이18.jpg', '라온이18.jpg')">
+            <img class="Raon" src="라온이19.jpg" alt="Thumbnail Image" onclick="openLightbox('라온이19.jpg', '라온이19.jpg')">
+            <img class="Raon" src="라온이20.jpg" alt="Thumbnail Image" onclick="openLightbox('라온이20.jpg', '라온이20.jpg')">
+
+            <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+                <div class="다운로드구조">
+                    <img src="" alt="Lightbox Image" id="lightboxImage">
+                    <div class="문구와버튼">
+                        <p class="다운로드문구">나를 데려가겠느냥?</p>
+                        <a id="downloadLink" download="" class="사진다운버튼링크">
+                            <button class="사진다운버튼"><strong>냥!</strong></button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="이미지모음">
+
+
+            <img class="Raon" src="라온이21.jpg" alt="Thumbnail Image" onclick="openLightbox('라온이21.jpg', '라온이21.jpg')">
+            <img class="Raon" src="라온이22.jpg" alt="Thumbnail Image" onclick="openLightbox('라온이22.jpg', '라온이22.jpg')">
+            <img class="Raon" src="라온이23.jpg" alt="Thumbnail Image" onclick="openLightbox('라온이23.jpg', '라온이23.jpg')">
+
+            <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+                <div class="다운로드구조">
+                    <img src="" alt="Lightbox Image" id="lightboxImage">
+                    <div class="문구와버튼">
+                        <p class="다운로드문구">나를 데려가겠느냥?</p>
+                        <a id="downloadLink" download="" class="사진다운버튼링크">
+                            <button class="사진다운버튼"><strong>냥!</strong></button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="이미지모음">
+
+
+            <img class="Raon" src="라온이24.jpg" alt="Thumbnail Image" onclick="openLightbox('라온이24.jpg', '라온이24.jpg')">
+            <img class="Raon" src="라온이25.jpg" alt="Thumbnail Image" onclick="openLightbox('라온이25.jpg', '라온이25.jpg')">
+            <img class="Raon" src="라온이26.jpg" alt="Thumbnail Image" onclick="openLightbox('라온이26.jpg', '라온이26.jpg')">
+
+            <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+                <div class="다운로드구조">
+                    <img src="" alt="Lightbox Image" id="lightboxImage">
+                    <div class="문구와버튼">
+                        <p class="다운로드문구">나를 데려가겠느냥?</p>
+                        <a id="downloadLink" download="" class="사진다운버튼링크">
+                            <button class="사진다운버튼"><strong>냥!</strong></button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="이미지모음">
+
+
+            <img class="Raon" src="라온이27.jpg" alt="Thumbnail Image" onclick="openLightbox('라온이27.jpg', '라온이27.jpg')">
+            <img class="Raon" src="라온이28.jpg" alt="Thumbnail Image" onclick="openLightbox('라온이28.jpg', '라온이28.jpg')">
+            <img class="Raon" src="라온이29.jpg" alt="Thumbnail Image" onclick="openLightbox('라온이29.jpg', '라온이29.jpg')">
+
+            <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+                <div class="다운로드구조">
+                    <img src="" alt="Lightbox Image" id="lightboxImage">
+                    <div class="문구와버튼">
+                        <p class="다운로드문구">나를 데려가겠느냥?</p>
+                        <a id="downloadLink" download="" class="사진다운버튼링크">
+                            <button class="사진다운버튼"><strong>냥!</strong></button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="이미지모음">
+
+
+            <img class="Raon" src="라온이30.jpg" alt="Thumbnail Image" onclick="openLightbox('라온이30.jpg', '라온이30.jpg')">
+            <img class="Raon" src="라온이31.jpg" alt="Thumbnail Image" onclick="openLightbox('라온이31.jpg', '라온이31.jpg')">
+            <img class="Raon" src="라온이32.jpg" alt="Thumbnail Image" onclick="openLightbox('라온이32.jpg', '라온이32.jpg')">
+
+            <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+                <div class="다운로드구조">
+                    <img src="" alt="Lightbox Image" id="lightboxImage">
+                    <div class="문구와버튼">
+                        <p class="다운로드문구">나를 데려가겠느냥?</p>
+                        <a id="downloadLink" download="" class="사진다운버튼링크">
+                            <button class="사진다운버튼"><strong>냥!</strong></button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="이미지모음">
+
+
+            <img class="Raon" src="라온이33.jpg" alt="Thumbnail Image" onclick="openLightbox('라온이33.jpg', '라온이33.jpg')">
+            <img class="Raon" src="라온이34.jpg" alt="Thumbnail Image" onclick="openLightbox('라온이34.jpg', '라온이34.jpg')">
+            <img class="Raon" src="라온이35.jpg" alt="Thumbnail Image" onclick="openLightbox('라온이35.jpg', '라온이35.jpg')">
+
+            <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+                <div class="다운로드구조">
+                    <img src="" alt="Lightbox Image" id="lightboxImage">
+                    <div class="문구와버튼">
+                        <p class="다운로드문구">나를 데려가겠느냥?</p>
+                        <a id="downloadLink" download="" class="사진다운버튼링크">
+                            <button class="사진다운버튼"><strong>냥!</strong></button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="이미지모음">
+
+
+            <img class="Raon" src="라온이36.jpg" alt="Thumbnail Image" onclick="openLightbox('라온이36.jpg', '라온이36.jpg')">
+            <img class="Raon" src="라온이37.jpg" alt="Thumbnail Image" onclick="openLightbox('라온이37.jpg', '라온이37.jpg')">
+            <img class="Raon" src="라온이38.jpg" alt="Thumbnail Image" onclick="openLightbox('라온이38.jpg', '라온이38.jpg')">
+
+            <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+                <div class="다운로드구조">
+                    <img src="" alt="Lightbox Image" id="lightboxImage">
+                    <div class="문구와버튼">
+                        <p class="다운로드문구">나를 데려가겠느냥?</p>
+                        <a id="downloadLink" download="" class="사진다운버튼링크">
+                            <button class="사진다운버튼"><strong>냥!</strong></button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="이미지모음">
+
+
+            <img class="Raon" src="라온이39.jpg" alt="Thumbnail Image" onclick="openLightbox('라온이39.jpg', '라온이39.jpg')">
+            <img class="Raon" src="라온이40.jpg" alt="Thumbnail Image" onclick="openLightbox('라온이40.jpg', '라온이40.jpg')">
+            <img class="Raon" src="라온이41.jpg" alt="Thumbnail Image" onclick="openLightbox('라온이41.jpg', '라온이41.jpg')">
+
+            <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+                <div class="다운로드구조">
+                    <img src="" alt="Lightbox Image" id="lightboxImage">
+                    <div class="문구와버튼">
+                        <p class="다운로드문구">나를 데려가겠느냥?</p>
+                        <a id="downloadLink" download="" class="사진다운버튼링크">
+                            <button class="사진다운버튼"><strong>냥!</strong></button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="이미지모음">
+
+
+            <img class="Raon" src="라온이42.jpg" alt="Thumbnail Image" onclick="openLightbox('라온이42.jpg', '라온이42.jpg')">
+            <img class="Raon" src="라온이43.jpg" alt="Thumbnail Image" onclick="openLightbox('라온이43.jpg', '라온이43.jpg')">
+            <img class="Raon" src="라온이44.jpg" alt="Thumbnail Image" onclick="openLightbox('라온이44.jpg', '라온이44.jpg')">
+
+            <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+                <div class="다운로드구조">
+                    <img src="" alt="Lightbox Image" id="lightboxImage">
+                    <div class="문구와버튼">
+                        <p class="다운로드문구">나를 데려가겠느냥?</p>
+                        <a id="downloadLink" download="" class="사진다운버튼링크">
+                            <button class="사진다운버튼"><strong>냥!</strong></button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="이미지모음">
+
+
+            <img class="Raon" src="라온이45.jpg" alt="Thumbnail Image" onclick="openLightbox('라온이45.jpg', '라온이45.jpg')">
+            <img class="Raon" src="라온이46.jpg" alt="Thumbnail Image" onclick="openLightbox('라온이46.jpg', '라온이46.jpg')">
+            <img class="Raon" src="라온이47.jpg" alt="Thumbnail Image" onclick="openLightbox('라온이47.jpg', '라온이47.jpg')">
+
+            <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+                <div class="다운로드구조">
+                    <img src="" alt="Lightbox Image" id="lightboxImage">
+                    <div class="문구와버튼">
+                        <p class="다운로드문구">나를 데려가겠느냥?</p>
+                        <a id="downloadLink" download="" class="사진다운버튼링크">
+                            <button class="사진다운버튼"><strong>냥!</strong></button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="이미지모음">
+
+
+            <img class="Raon" src="라온이48.jpg" alt="Thumbnail Image" onclick="openLightbox('라온이48.jpg', '라온이48.jpg')">
+            <img class="Raon" src="라온이49.jpg" alt="Thumbnail Image" onclick="openLightbox('라온이49.jpg', '라온이49.jpg')">
+            <img class="Raon" src="라온이50.jpg" alt="Thumbnail Image" onclick="openLightbox('라온이50.jpg', '라온이50.jpg')">
+
+            <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+                <div class="다운로드구조">
+                    <img src="" alt="Lightbox Image" id="lightboxImage">
+                    <div class="문구와버튼">
+                        <p class="다운로드문구">나를 데려가겠느냥?</p>
+                        <a id="downloadLink" download="" class="사진다운버튼링크">
+                            <button class="사진다운버튼"><strong>냥!</strong></button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
     </section>
 
+    <hr class="line">
 
 </main>
 
