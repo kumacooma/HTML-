@@ -471,5 +471,8 @@ margin-bottom: 0;
         left: 50%;
         transform: translate(-50%,-50%);
     }
+    #myModal,#myModal2{
+        right: auto;
+    }
 }
 
