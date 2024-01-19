@@ -106,10 +106,8 @@ header,main,footer{
     border: none;
     outline: none;
     color: black;
-    height: 40px;
     font-size: 25px;
     text-align: center;
-    width: 40px;
     cursor: pointer;
 
 }
@@ -152,8 +150,6 @@ header,main,footer{
 #myModal,#myModal2 {
     display: none;
     position: fixed;
-    top: 3%;
-    right: 11%;
     padding: 20px;
     background-color: white;
     border: 1px solid #ccc;
