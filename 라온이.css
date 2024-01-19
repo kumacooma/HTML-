@@ -244,7 +244,8 @@ header,main,footer{
 
 .문구와버튼
 {
-    width: 190px;
+    display: flex;
+    flex-direction: column;
     padding: 10px;
     margin : auto;
     background-color: white;
@@ -276,10 +277,9 @@ header,main,footer{
 .lightbox {
     position: fixed;
     display: none;
-    width: 90%;
-    height: 90%;
+    height: 80%;
     top: 50%;
-    left: 80%;
+    left: 50%;
     transform: translate(-50%, -50%);
 
 }
