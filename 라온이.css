@@ -14,6 +14,8 @@ header {
 
 }
 
+
+
 .navi{
     display: flex;
     justify-content: space-between;
@@ -335,5 +337,112 @@ header,main,footer{
     /*margin-left:320px;*/
     margin-bottom: 68px;
     border:1px solid hotpink;
+}
+
+/*미디어쿼리*/
+
+@media (max-width: 575px){
+.background-div{
+    width:100%;
+}
+    header{
+        margin-bottom: 0;
+    }
+.HAS{
+    margin-top:40px;
+    justify-content: center;
+}
+.냥스타묶음{
+    font-size: 5px;
+}
+.h1{
+
+    text-align: center;
+}
+.p1{
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.sec-소개문구{
+    flex-direction: column-reverse;
+    margin:0 auto
+}
+.라온이1{
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+}
+.소개문구{
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+.추가문구{
+    font-size: 15px;
+    text-align: center;}
+
+.sec-1{
+    flex-direction: column-reverse;
+}
+.main-sec1{
+    width: 100%;
+    height: auto;
+}
+.sec1-h{
+    justify-content: center;
+    font-size: 25px;
+    text-align: center
+}
+.소개박스{
+    justify-content: space-evenly;
+}
+.sec1-p{
+    justify-content: center;
+    line-height: 30px;
+    margin-top: 0;
+}
+.sec2-h{
+    font-size: 24px;
+}
+
+.image-gallery{
+    gap:0;
+    margin-bottom: 100px;
+
+}
+.이미지모음{
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+.line{
+    margin-bottom: 100px;
+    width: 100%;
+}
+.footer-h{
+    justify-content: center;
+}
+.footer-p{
+    text-align: center;
+}
+.map{
+    width: 100%;
+    height: 200px;
+    justify-content: center;
+}
+    .lightbox img{
+        margin-bottom: 0;
+    }
+    .문구와버튼{
+        margin-top: 0;
+    }
+    .다운로드문구{
+        font-size: 18px;
+    }
 }
 
