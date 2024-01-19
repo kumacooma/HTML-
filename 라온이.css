@@ -1,7 +1,7 @@
 body{
     margin:0;
     padding: 0;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
 }
 header {
     width: 1920px;
@@ -306,5 +306,5 @@ header,main,footer{
     height:1px;
     margin-left:320px;
     margin-bottom: 68px;
-    color: #c4c4c4;
+    color:hotpink;
 }
