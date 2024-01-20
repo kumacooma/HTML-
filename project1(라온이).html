@@ -468,6 +468,36 @@
         // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
         let map = new kakao.maps.Map(mapContainer, mapOption);
     </script>
+
+    <section class="distance">
+
+        <div class="거리계산기설명">
+            <p class="거리계산기설명-p">고양이 거리계산기<br>(라온이와 나의 거리)</p>
+            <span class="설명-span">똑똑한 라온이가 당신의 집까지의 거리를 계산해줍니다.</span>
+        </div>
+
+        <div class="거리계산기">
+            <label class="거리계산기-lable" for="userInput">주소를 입력해라 냥</label>
+            <span class="화살표">⇩</span>
+            <div class="input-button">
+                <input class="거리계산기-input" type="text" id="userInput" placeholder=" 주소를 입력하세요 :">
+                <button class="distancebutton" onclick="openModal()">확인</button>
+            </div>
+        </div>
+    </section>
+
+    <div id="myModal3">
+        <img src="라온이5.jpg" alt="어렵다 냥 라온이" class="myModal3pic">
+        <p class="myModal3-p">너무 어렵다 냥!ㅠㅠ</p>
+        <button class="modalbutton" onclick="closeModal('myModal3')"><strong>닫아라 냥💖</strong></button>
+    </div>
+
+    <div id="myModal4">
+        <p class="myModal4-p">주소를 입력해라 냥!</p>
+        <button class="modalbutton" onclick="closeModal('myModal4')"><strong>닫아라 냥</strong></button>
+    </div>
+
+
 </footer>
 </body>
 </html>

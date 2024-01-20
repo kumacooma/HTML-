@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     about.addEventListener("click", function(event) {
         event.preventDefault();
-        modal.style.display = "block";
+        modal.style.display = "flex";
     });
 });
 
@@ -14,9 +14,29 @@ document.addEventListener("DOMContentLoaded", function() {
 
     support.addEventListener("click", function(event) {
         event.preventDefault();
-        modal2.style.display = "block";
+        modal2.style.display = "flex";
     });
 });
+// footer
+function openModal() {
+    // 입력된 값을 가져옴
+    let userInput = document.getElementById("userInput").value;
+
+    if(userInput){
+    // 모달 창을 보이도록 설정
+    document.getElementById("myModal3").style.display = "flex";}
+    else{
+        document.getElementById("myModal4").style.display = "flex";
+    }
+
+
+}
+
+//  function closeModal2() {
+// // 모달 창 닫기
+//  document.getElementById("myModal3").style.display = "none";
+// }
+// footer
 
 function closeModal(modalId) {
     let modal = document.getElementById(modalId);

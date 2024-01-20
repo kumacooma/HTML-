@@ -112,7 +112,7 @@ header,main,footer{
 
 }
 
-.modalbutton,.냥스타그램 {
+.modalbutton,.냥스타그램,.distancebutton {
     border-radius: 30px;
     background-color: hotpink;
     border: none;
@@ -122,12 +122,12 @@ header,main,footer{
     cursor: pointer;
 }
 
-.사진다운버튼:hover,.modalbutton:hover,.냥스타그램:hover {
+.사진다운버튼:hover,.modalbutton:hover,.냥스타그램:hover,.distancebutton:hover {
     background-color: cornflowerblue;
 }
 
 .modalbutton{
-    margin-left: 30%;
+   margin: 0 auto;
 
 
 }
@@ -147,17 +147,18 @@ header,main,footer{
 
 
 
-#myModal,#myModal2 {
+#myModal,#myModal2{
+    background-color: lavenderblush;
     display: none;
+    flex-direction: column;
     position: fixed;
     padding: 20px;
-    background-color: white;
     border: 1px solid #ccc;
     border-radius: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 1;
 }
-.myModal-p,.myModal-p2{
+.myModal-p,.myModal-p2,.myModal3-p,.myModal4-p{
     font-size: 20px;
 }
 .insta{
@@ -246,7 +247,7 @@ header,main,footer{
     flex-direction: column;
     padding: 10px;
     margin : auto;
-    background-color: white;
+    background-color: lavenderblush;
     border: 1px solid #ccc;
     border-radius: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -333,6 +334,92 @@ header,main,footer{
     /*margin-left:320px;*/
     margin-bottom: 68px;
     border:1px solid hotpink;
+}
+
+.거리계산기{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 180px;
+    width: 300px;
+    gap:5px;
+    border-radius: 90px;
+    background-color:darksalmon;
+    margin:auto 0;
+
+}
+.거리계산기-lable{
+    /*margin-left: 830px;*/
+    /*margin-top: 50px;*/
+    /*margin-bottom: 30px;*/
+    font-size: 25px;
+    color: white;
+
+
+
+}
+.거리계산기-input{
+    height: 30px;
+    border-radius: 30px;
+}
+
+
+.input-button{
+    /*margin-left: 830px;*/
+}
+.화살표{
+    font-size: 40px;
+    text-align: center;
+    color: white;
+
+
+}
+.distance{
+    display: flex;
+    justify-content: center;
+    background-color: cornflowerblue;
+    width: 1280px;
+    height: 201px;
+    border-radius: 90px;
+    gap:163px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:0;
+    margin-bottom: 240px;
+}
+.거리계산기설명{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    color:white;
+    /*gap:18px;*/
+}
+.거리계산기설명-p{
+    font-size: 36px;
+    margin-bottom: 18px;
+    margin-top: 0;
+}
+
+#myModal3,#myModal4{
+    display: none;
+    background-color: lavenderblush;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+.myModal3pic{
+    width: 200px;
+    height: 100px;
+    border-radius: 30px;
 }
 
 /*미디어쿼리*/
@@ -471,5 +558,36 @@ margin-bottom: 0;
     #myModal,#myModal2{
         right: auto;
     }
+.distance{
+    width: 100%;
+    gap:0;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.거리계산기{
+    margin:0 auto;
+    height: 70px;
+    width: 80%;
+}
+.거리계산기설명-p{
+    font-size: 20px;
+}
+.거리계산기-lable{
+    font-size: 15px;
+}
+.화살표{
+    display: none;
+}
+.설명-span{
+    font-size: 12px;
+}
+.myModal4-p{
+    font-size: 15px;
+    text-align: center;
+}
+.myModal3-p{
+    text-align: center;
+}
+
 }
 
