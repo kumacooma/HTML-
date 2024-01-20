@@ -598,6 +598,7 @@ margin-bottom: 0;
     gap:0;
     flex-direction: column;
     justify-content: space-evenly;
+    margin-bottom: 100px;
 }
 .거리계산기{
     margin:0 auto;
@@ -625,6 +626,13 @@ margin-bottom: 0;
 }
 .last{
     width: 100%;
+    justify-content: center;
+}
+.h5{
+    margin-top: 10px;
+}
+.끝인사묶음{
+    margin-bottom: 10px;
 }
 
 }
