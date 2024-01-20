@@ -58,9 +58,7 @@ header,main,footer{
 
 
 }
-.p1,.h1{
 
-}
 .h1{
     margin-bottom: 180px;
 
@@ -421,6 +419,43 @@ header,main,footer{
     height: 100px;
     border-radius: 30px;
 }
+footer{
+    background-color: beige;
+}
+.last{
+    display: flex;
+    width: 1278px;
+    margin: 0 auto;
+    justify-content: space-between;
+
+
+}
+.끝인사묶음{
+    display: flex;
+    flex-direction: column;
+    margin-left:auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-top: 0;
+}
+.끝인사{
+    font-size: 30px;
+    text-align: center;
+
+}
+.h5{
+    margin-bottom: 0;
+    font-size: 30px;
+}
+
+.lastpic{
+    width: 300px;
+    height: 200px;
+    margin: 0 auto;
+
+}
+
+
 
 /*미디어쿼리*/
 
@@ -587,6 +622,9 @@ margin-bottom: 0;
 }
 .myModal3-p{
     text-align: center;
+}
+.last{
+    width: 100%;
 }
 
 }
