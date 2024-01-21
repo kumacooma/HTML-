@@ -31,11 +31,6 @@ function openModal() {
 
 
 }
-
-//  function closeModal2() {
-// // 모달 창 닫기
-//  document.getElementById("myModal3").style.display = "none";
-// }
 // footer
 
 function closeModal(modalId) {
@@ -53,7 +48,8 @@ function openLightbox(imageSrc, downloadLink) {
     // Lightbox 표시
     let lightbox = document.getElementById('lightbox');
     lightbox.style.display = 'flex';
-
+    let overlay = document.getElementById('overlay');
+    overlay.style.display = 'block';
     // Lightbox 이미지 업데이트
     let lightboxImage = document.getElementById('lightboxImage');
     lightboxImage.src = imageSrc;
@@ -64,9 +60,12 @@ function openLightbox(imageSrc, downloadLink) {
 }
 
 
+
 function closeLightbox() {
     // Lightbox 닫기
     let lightbox = document.getElementById('lightbox');
     lightbox.style.display = 'none';
+    let overlay = document.getElementById('overlay');
+    overlay.style.display = 'none';
 }
 
