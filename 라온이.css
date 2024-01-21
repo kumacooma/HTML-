@@ -287,6 +287,7 @@ header,main,footer{
     border: 2px solid white;
     border-radius: 30px;
     margin: auto;
+    cursor: pointer;
 
 }
 
@@ -307,10 +308,6 @@ header,main,footer{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    /*gap: 72px;*/
-    /*margin-left: 320px;*/
-    /*margin-right: 322px;*/
-    /*width: 1295px; !*사진이 약간 잘리는 관계로 스크롤 폭은 상향조정*!*/
     margin-bottom: 288px;
     max-height: 828px;
     overflow-y: auto;
@@ -446,15 +443,24 @@ footer{
 .h5{
     margin-bottom: 0;
     font-size: 30px;
+
+}
+.lasttext{
+    color: black;
+    text-decoration: none;
 }
 
 .lastpic{
     width: 300px;
     height: 200px;
     margin: 0 auto;
+    cursor: pointer;
 
 }
-
+.h1text{
+    text-decoration: none;
+    color: black;
+}
 
 
 /*미디어쿼리*/
