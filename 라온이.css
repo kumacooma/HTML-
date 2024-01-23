@@ -311,7 +311,7 @@ header,main,footer{
     flex-direction: column;
     font-size: 25px;
     color: navy;
-    /*margin-left: 320px;*/
+
 }
 
 .image-gallery {
@@ -336,8 +336,6 @@ header,main,footer{
 
 .line{
     display: flex;
-    /*width:1278px;*/
-    /*margin-left:320px;*/
     margin-bottom: 68px;
     border:1px solid hotpink;
 }
@@ -356,9 +354,7 @@ header,main,footer{
 
 }
 .거리계산기-lable{
-    /*margin-left: 830px;*/
-    /*margin-top: 50px;*/
-    /*margin-bottom: 30px;*/
+
     font-size: 25px;
     color: white;
 

@@ -39,35 +39,9 @@ function closeModal(modalId) {
 }
 
 function refreshPage() {
-    location.reload(true); // 페이지를 새로고침합니다.
+    location.reload(true); // 페이지를 새로고침
 }
 
-
-
-// function openLightbox(imageSrc, downloadLink) {
-//     // Lightbox 표시
-//     let lightbox = document.getElementById('lightbox');
-//     lightbox.style.display = 'flex';
-//     let overlay = document.getElementById('overlay');
-//     overlay.style.display = 'block';
-//     // Lightbox 이미지 업데이트
-//     let lightboxImage = document.getElementById('lightboxImage');
-//     lightboxImage.src = imageSrc;
-//
-//     // Lightbox 다운로드 링크 업데이트
-//     let downloadButton = document.getElementById('downloadLink');
-//     downloadButton.href = downloadLink;
-// }
-//
-//
-//
-// function closeLightbox() {
-//     // Lightbox 닫기
-//     let lightbox = document.getElementById('lightbox');
-//     lightbox.style.display = 'none';
-//     let overlay = document.getElementById('overlay');
-//     overlay.style.display = 'none';
-// }
 
 
 function openLightbox(imageSrc, downloadLink, lightboxId) {
