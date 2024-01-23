@@ -582,6 +582,8 @@ margin-bottom: 0;
     justify-content: center;
 }
     .lightbox img{
+        width:100%;
+        height: auto;
         margin-bottom: 0;
     }
     .문구와버튼{
